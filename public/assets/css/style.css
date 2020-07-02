@@ -1,19 +1,12 @@
-li {
-  padding: 5px;
-  margin: 5px;
-  background: #faebd7;
-}
-
-.label {
-  font-weight: bold;
-}
-
-.create-update-form {
-  padding: 5px;
-  margin: 5px;
-  background: aqua;
-}
-
-.form-group {
-  margin-bottom: 5px;
-}
+ body {
+     background-color: lawngreen;
+ }
+ 
+ img {
+     width: 150px;
+     height: auto;
+ }
+ 
+ button {
+     border-radius: 5px;
+ }
