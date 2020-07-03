@@ -5,7 +5,7 @@
   <h3 class="w-100 text-center text-danger p-1">Eat that burger!</h3>
 
 <div> 
- <h5>Burgers you want to eat!</h5>
+ <h5 class="p-2">Burgers you want to devour!</h5>
   <table class="table table-light">
     <thead>
       <tr>
@@ -23,7 +23,24 @@
     </tbody>
   </table>
 
-<h5>Burgers you devored!</h5>
+<h5 class="p-2">Burgers you devoured!</h5>
+
+  <table class="table table-light">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Burger name</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each burgers}}
+          {{#if devoured}}
+            {{> burgers/burger-block}}
+          {{/if}}
+      {{/each}}
+    </tbody>
+  </table>
 
 
 
