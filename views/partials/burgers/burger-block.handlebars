@@ -1,7 +1,8 @@
-<li class="list-group-item">
-	<p class="foat-left" data-id="{{id}}" data-newdevor="{{devor}}">
-		{{#if devor}} {{id}}| {{burger_name}} {{/if}}
-	</p>
 
-	<button class="eat-burgerbtn btn-outline-dark float-right" data-id="{{this.id}}">Devor it!</button>
-</li>
+     <tr>
+        <td>{{id}}</td>
+        <td>{{burger_name}}</td>
+        <td>
+			<button class="btn-outline-dark float-right" data-id="{{this.id}}">Devor it!</button>
+		</td>
+      </tr>
