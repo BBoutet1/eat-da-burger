@@ -9,8 +9,8 @@
 
 <ul class="list-group">
   {{#each burgers}}
-    {{#unless sleepy}}
-      {{> burgers/burger-block sleep=true}}
+    {{#unless devored}}
+      {{> burgers/burger-block devor=true}}
     {{/unless}}
   {{/each}}
 </ul>
