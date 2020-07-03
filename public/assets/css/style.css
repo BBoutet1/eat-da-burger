@@ -11,6 +11,10 @@
      width: 400px;
  }
  
+ .input {
+     height: 35px;
+ }
+ 
  button {
      border-radius: 5px;
      width: 90px;
