@@ -2,10 +2,11 @@
 
 <div class="row justify-content-center mt-4">
   <img src="assets/images/burger.png"/>
-  <h3 class="w-100 text-center text-danger p-1">Eat that burger!</h3>
+  <h3 class="w-100 text-center text-danger p-1">Eat-Da-Burger!</h3>
 
-<div> 
- <h5 class="p-2">Burgers you want to devour!</h5>
+<div class="row m-0"> 
+  <div class="col tablewrapper mr-5">
+    <h5 class="p-2 w-100 text-center">Burgers you want to devour!</h5>
   <table class="table table-light">
     <thead>
       <tr>
@@ -22,37 +23,39 @@
       {{/each}}
     </tbody>
   </table>
+</div>
+ 
 
-<h5 class="p-2">Burgers you devoured!</h5>
+<div class="col tableWrapper">  
+  <h5 class="p-2 w-100 text-center">Burgers you devoured!</h5>
 
   <table class="table table-light">
     <thead>
       <tr>
         <th>ID</th>
         <th>Burger name</th>
-        <th></th>
       </tr>
     </thead>
     <tbody>
       {{#each burgers}}
           {{#if devoured}}
-            {{> burgers/burger-block}}
+            {{> burgers/burger-devoured}}
           {{/if}}
       {{/each}}
     </tbody>
   </table>
+  </div>
 
 
 
 </div>
  
 <h6 class="w-100 text-center">Enter and submit the burger you want to eat</h6>
-<form class="create-form">
-
-  <div class="form-group">
+<form>
+  <div class="form-group d-bloack">
     <input type="text" id="ca" name="name">
   </div>
-  <button class="btn btn-primary" type="submit">Submit</button>
+  <button class="btn btn-primary d-block ml-5" type="submit">Submit</button>
 </form>
 
 </div>

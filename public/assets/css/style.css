@@ -7,6 +7,16 @@
      height: auto;
  }
  
+ .tablewrapper {
+     width: 400px;
+ }
+ 
  button {
      border-radius: 5px;
+     width: 90px;
+ }
+ 
+ .name {
+     height: 56px;
+     width: 300px;
  }
